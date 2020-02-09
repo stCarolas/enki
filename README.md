@@ -35,6 +35,8 @@ There is where Enki can help you.
 
 Enki takes all the problems with handling of cloning and iterating over multiple repositories, commiting and pushing them. All you need to do is write or reuse some handler which takes metadata and local cloned copy of repository and just does required job.
 
+last check - committing, commiting, comitting.
+
 # Set Up with Maven
 
 Add github personal token with `read:packages` scope to settings.xml (use Personal Access Token from Github, not password)
