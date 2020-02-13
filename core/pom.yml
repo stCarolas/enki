@@ -6,6 +6,9 @@ version: 0.1.21
 packaging: jar
 name: Enki Core
 properties: {revision: 0.0.1, java.version: 1.8, maven.compiler.source: 1.8, maven.compiler.target: 1.8}
+dependencyManagement:
+  dependencies:
+    - {groupId: org.junit, artifactId: junit-bom, version: 5.5.1, type: pom, scope: import}
 dependencies:
 - {groupId: com.typesafe, artifactId: config, version: 1.3.4}
 - {groupId: io.vavr, artifactId: vavr, version: 1.0.0-alpha-3}
@@ -14,6 +17,7 @@ dependencies:
 - {groupId: org.eclipse.jgit, artifactId: org.eclipse.jgit, version: 5.4.0.201906121030-r}
 - {groupId: org.projectlombok, artifactId: lombok, version: 1.18.8, scope: provided,
   optional: true}
+- {groupId: org.junit.jupiter, artifactId: junit-jupiter-engine, scope: test}
 distributionManagement:
   repository: {id: enki-github-repo, layout: default, name: github, uniqueVersion: false,
     url: 'https://maven.pkg.github.com/stCarolas/Enki'}
